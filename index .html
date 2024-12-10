@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <header class="shadow-xl">
+        <div class="w-[1000px] m-auto h-[50px] flex items-center justify-around">
+            <div>
+                <h1 class="font-semibold text-2xl italic text-yellow-600">JavaScript</h1>
+            </div>
+            <nav class="text-xl font-normal">
+                <a href="#">Home</a>
+                <a href="" class="ml-10">Contacts</a>
+                <a href="" class="ml-10">About</a>
+                <a href="./pages/signin/signin.html" class="ml-[100px]">Sign In</a>
+                <a href="./pages/signup/signup.html" class="ml-4">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+    <div class="flex justify-center mt-[50px] ml-[200px]">
+        <img width="500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0b3x5OEm9KwrTD9B6F62liuMMPoVpYap7wg&s" alt="">
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

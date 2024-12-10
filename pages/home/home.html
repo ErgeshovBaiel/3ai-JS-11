@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+  <header class="shadow-xl">
+    <div class="w-[1000px] m-auto h-[50px] flex items-center justify-around">
+        <div>
+            <h1 class="font-semibold text-2xl italic text-yellow-600">JavaScript</h1>
+        </div>
+        <nav class="text-xl font-normal">
+            <a href="#">Home</a>
+            <a href="" class="ml-3">Contacts</a>
+            <a href="" class="ml-3">About</a>
+            <button id="logoutBtn" class="border p-2 bg-red-600 rounded-xl text-white ml-[50px]">Выйты</button>
+          </nav>
+          <div class="">
+            <img width="55px" style="border-radius: 200px; margin-right: 100px;" src="https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="">
+          </div>
+    </div>
+</header>
+<div class="flex justify-center text-center mt-[50px]">
+  <h1 class="text-4xl font-bold my-2 ml-[10px] mt-[-20px]">Добро пожаловать , <span id="userName" class="text-green-500"></span>!</h1>
+</div>
+    <script src="./home.js"></script>
+</body>
+</html>
